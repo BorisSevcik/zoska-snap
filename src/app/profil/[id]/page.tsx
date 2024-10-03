@@ -12,4 +12,4 @@ export default function ProfileDetail() {
       <Typography> Detail profilu </Typography>
 
   );
-}
+} 
