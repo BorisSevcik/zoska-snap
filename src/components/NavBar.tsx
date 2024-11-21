@@ -6,7 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { useRouter } from 'next/navigation';
-
+import InfoIcon from '@mui/icons-material/Info';
 export default function Navbar() {
   const [value, setValue] = React.useState('/');
   const router = useRouter();
@@ -26,6 +26,7 @@ export default function Navbar() {
         <BottomNavigationAction label="Domov" value="/" icon={<HomeIcon />} />
         <BottomNavigationAction label="Profily" value="/profil" icon={<AccountCircleIcon />} />
         <BottomNavigationAction label="Príspevky" value="/prispevok" icon={<AddCircleIcon />} />
+        <BottomNavigationAction label="O nás" value="/" icon={<InfoIcon />} />
       </BottomNavigation>
     </Box>
   );
